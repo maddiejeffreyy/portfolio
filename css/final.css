@@ -69,7 +69,7 @@ h3{
 
 html{
     font-family: "Roboto", sans-serif; 
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 /* ------------------------------ DESKTOP NAV ------------------------------ */
@@ -122,21 +122,24 @@ a{
     transform: translate(-50%, -50%);
 }
 
-/* -------------------------------- ABOUT ME HOME --------------------------- */
+/* -------------------------------- ABOUT ME ------------------------------- */
 .about-me-home{
+    width: 80%;
     display: flex; 
 }
 .about-me-home img{
-    width: 20em;
+    width: 300%;
+
 }
 
-/* .flex2 h2{
-   align-items: center;
-    padding: 0% 0% 5% 30%;
-} */
+.flex2 h2{
+   margin-left: 35%;
+   padding-bottom: 5%;
+}
 
 .flex2:nth-child(1){
-    padding: 20% 0% 0% 0%;
+    padding: 15% 0% 0% 0%;
+    line-height: 120%; 
 }
 
 /* ------------------------------ FOOTER ------------------------------------ */
