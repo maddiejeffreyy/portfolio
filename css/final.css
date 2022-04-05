@@ -67,6 +67,14 @@ h3{
    font-size: 16px;
 }
 
+h4{
+   font-family: "Roboto", sans-serif; 
+   font-weight: 700;
+   font-size: 8em; 
+   color: white;
+   letter-spacing: 0.1em;
+}
+
 html{
     font-family: "Roboto", sans-serif; 
     font-weight: 400;
@@ -140,6 +148,20 @@ a{
 .flex2:nth-child(1){
     padding: 15% 0% 0% 0%;
     line-height: 120%; 
+}
+
+/* ------------------------------- MY WORK ---------------------------------- */
+.photography{
+    display: flex;
+    justify-content: space-between;
+}
+.videography{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex3{
+    width: 30%;
 }
 
 /* ------------------------------ FOOTER ------------------------------------ */
