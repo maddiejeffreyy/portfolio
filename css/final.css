@@ -90,7 +90,9 @@ header{
 }
 
 .body-content{
-    margin: 0% 10% 0% 10%;
+    margin: 0% 5% 0% 5%;
+    padding: 0% 5% 0% 5%;
+    background-color: rgb(240, 255, 251);
 }
 
 a{
@@ -156,6 +158,14 @@ a{
     justify-content: space-between;
 }
 .videography{
+    display: flex;
+    justify-content: space-between;
+}
+.digital-graphics{
+    display: flex;
+    justify-content: space-between;
+}
+.coding{
     display: flex;
     justify-content: space-between;
 }
