@@ -59,12 +59,14 @@ h1{
 h2{
     font-family: "Roboto", sans-serif; 
     font-weight: 700;
-    font-size: 16px;  
+    font-size: 16px; 
+    color: #404040; 
 }
 h3{
    font-family: "Roboto", sans-serif; 
    font-weight: 500;
    font-size: 16px;
+   color: #404040;
 }
 
 h4{
@@ -75,28 +77,51 @@ h4{
    letter-spacing: 0.1em;
 }
 
+h5{
+    font-family: "Roboto", sans-serif; 
+    font-weight: 700;
+    font-size: 16px; 
+    color: #404040; 
+}
+
 html{
     font-family: "Roboto", sans-serif; 
     font-weight: 400;
+    background-color: #c9e3b6;
+    color: #404040;
+}
+
+p{
+    line-height: 160%;
+    color: #404040;
 }
 
 /* ------------------------------ DESKTOP NAV ------------------------------ */
 header{
-    margin: 1% 5% 1% 5%;
+    padding: 1% 5% 1% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: #fdfae7;
+}
+
+.site-container{
+    background-color: #fdfae7;
 }
 
 .body-content{
     margin: 0% 5% 0% 5%;
-    padding: 0% 5% 0% 5%;
-    background-color: rgb(240, 255, 251);
+    padding: 0% 5% 2% 5%;
+    background-color: #fdfae7;
 }
 
 a{
     text-decoration: none;
+}
+
+a:visited{
+    color: black;
 }
 
 .flex1{
@@ -132,6 +157,52 @@ a{
     transform: translate(-50%, -50%);
 }
 
+/* --------------------------------- MY WORK ------------------------------- */
+.block{
+    width: 100%;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2%;
+}
+
+.grid1 .block:nth-child(1){
+    width: 98%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.grid1 .block:nth-child(2){
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid1 .block:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.grid1 .block:nth-child(4){
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.body-content h2{
+    text-align: center;
+    padding: 3% 0% 3% 0%;
+}
+
 /* -------------------------------- ABOUT ME ------------------------------- */
 .about-me-home{
     width: 80%;
@@ -139,10 +210,9 @@ a{
 }
 .about-me-home img{
     width: 300%;
-
 }
 
-.flex2 h2{
+.flex2 h5{
    margin-left: 35%;
    padding-bottom: 5%;
 }
@@ -174,9 +244,49 @@ a{
     width: 30%;
 }
 
+/* ------------------------------ CONTACT ------------------------------------ */
+.spacing h5{
+   padding: 2% 0% 2% 0%;
+}
+
+form{
+    width: 100%;
+}
+
+.email, .name, .message{
+    width: 100%;
+    font-weight: 700;
+}
+
+.send{
+    background-color: #c9e3b6;
+    color: #404040;
+    border: solid 1px #404040;
+    width: 25%;
+    padding: 10px 0px 10px 0px;
+}
+
 /* ------------------------------ FOOTER ------------------------------------ */
 footer{
     display: flex;
-    margin: 1% 5% 1% 5%;
+    padding: 1% 5% 1% 5%;
     justify-content: space-between;
+    background-color: #fdfae7;
+}
+
+.fa{
+    color: rgb(158, 158, 158);
+}
+
+.flexfoot a{
+    color: rgb(158, 158, 158);
+}
+.flexfoot:nth-child(1){
+    font-size: 12px;
+    color: rgb(158, 158, 158);
+}
+
+.flexfoot:nth-child(2){
+    font-size: 12;
+    color: rgb(158, 158, 158);
 }
