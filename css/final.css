@@ -139,6 +139,24 @@ a:visited{
     flex-basis: 100%;
 }
 
+@media screen and (max-width: 480px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex1 img{
+        justify-self: center;
+        width: 120px;
+        margin-left: -65%;
+    }
+
+    .flex1{
+        padding: 2% 0% 2% 0%;
+    }
+}
+
 /* ------------------------------- BANNER ----------------------------------- */
 .background-image img{
     width: 100%;
@@ -157,7 +175,43 @@ a:visited{
     transform: translate(-50%, -50%);
 }
 
-/* --------------------------------- MY WORK ------------------------------- */
+@media screen and (max-width: 780px){
+    h1{
+        font-family: "Roboto", sans-serif; 
+        font-weight: 700;
+        font-size: 8em; 
+        color: white;
+        letter-spacing: 0.1em;
+    }
+
+    h4{
+        font-family: "Roboto", sans-serif; 
+        font-weight: 700;
+        font-size: 5em; 
+        color: white;
+        letter-spacing: 0.1em;
+     }
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        font-family: "Roboto", sans-serif; 
+        font-weight: 700;
+        font-size: 4em; 
+        color: white;
+        letter-spacing: 0.1em;
+    }
+
+    h4{
+        font-family: "Roboto", sans-serif; 
+        font-weight: 700;
+        font-size: 2.5em; 
+        color: white;
+        letter-spacing: 0.1em;
+     }
+}
+
+/* --------------------------------- HOME MY WORK ------------------------------- */
 .block{
     width: 100%;
 }
