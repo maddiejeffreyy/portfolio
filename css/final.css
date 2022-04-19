@@ -139,7 +139,7 @@ a:visited{
     flex-basis: 100%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
     header{
         display: flex;
         flex-direction: column;
@@ -175,7 +175,7 @@ a:visited{
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 800px){
     h1{
         font-family: "Roboto", sans-serif; 
         font-weight: 700;
@@ -193,7 +193,7 @@ a:visited{
      }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
     h1{
         font-family: "Roboto", sans-serif; 
         font-weight: 700;
@@ -257,6 +257,23 @@ a:visited{
     padding: 3% 0% 3% 0%;
 }
 
+@media screen and (max-width: 500px){
+    .grid1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .block{
+        padding: 2% 0% 2% 0%;
+    }
+
+    .my-work-home h2{
+        padding: 6% 0% 4% 0%;
+    }
+}
+
 /* -------------------------------- ABOUT ME ------------------------------- */
 .about-me-home{
     width: 80%;
@@ -272,8 +289,28 @@ a:visited{
 }
 
 .flex2:nth-child(1){
-    padding: 15% 0% 0% 0%;
+    padding: 8% 0% 0% 0%;
     line-height: 120%; 
+}
+
+@media screen and (max-width: 500px){
+    .about-me-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .flex2 img{
+        width: 100%;
+    }
+    .flex2:nth-child(1){
+        order: 2;
+        padding: 0% 0% 0% 0%;
+    }
+
+    .flex2:nth-child(2){
+        order: 1;
+    }
 }
 
 /* ------------------------------- MY WORK ---------------------------------- */
@@ -298,13 +335,62 @@ a:visited{
     width: 30%;
 }
 
+@media screen and (max-width: 800px){
+    .flex3:nth-child(3){
+        display: none;
+    }
+    .flex3:nth-child(1){
+        padding: 3% 2% 3% 0%;
+    }
+    .flex3:nth-child(2){
+        padding: 3% 0% 3% 2%;
+    }
+    .flex3{
+        width: 48%;
+    }
+    .body-content{
+        padding-top: 2%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .flex3:nth-child(3){
+        display: block;
+    }
+    .flex3{
+        width: 100%;
+        padding: 2% 0% 2% 0%;
+    }
+    .photography{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .videography{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .digital-graphics{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* ------------------------------ CONTACT ------------------------------------ */
 .spacing h5{
-   padding: 2% 0% 2% 0%;
+   padding: 4% 0% 4% 0%;
 }
 
 form{
     width: 100%;
+    padding-top: 6%;
 }
 
 .email, .name, .message{
@@ -323,9 +409,10 @@ form{
 /* ------------------------------ FOOTER ------------------------------------ */
 footer{
     display: flex;
-    padding: 1% 5% 1% 5%;
+    padding: 3% 5% 3% 5%;
     justify-content: space-between;
     background-color: #fdfae7;
+    line-height: 100%;
 }
 
 .fa{
